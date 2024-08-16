@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the trained model
-model = tf.keras.models.load_model('./model/pneumonia_detection.h5')
+model = tf.keras.models.load_model('./pneumonia_detection.h5')
 
 def preprocess_image(image: Image.Image, target_size: tuple):
     """Preprocess the image to the target size required by the model."""
